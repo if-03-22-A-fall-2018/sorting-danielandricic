@@ -12,7 +12,7 @@
 */
 #include "stopwatch.h"
 
-static clock_t start, end, total;
+static clock_t start, end;
 
 void 	start_stopwatch ()
 {
@@ -26,6 +26,5 @@ void 	stop_stopwatch ()
 
 float 	elapsed_time ()
 {
-  total = (double)(end - start) / CLOCKS_PER_SEC;
-  return (double) total;
+  return (float) (end - start) / CLOCKS_PER_SEC;
 }
