@@ -21,10 +21,11 @@ void 	start_stopwatch ()
 
 void 	stop_stopwatch ()
 {
-  end = clock();
+  
 }
 
 float 	elapsed_time ()
 {
+  end=clock();
   return (float) (end - start) / CLOCKS_PER_SEC;
 }
